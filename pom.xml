@@ -10,7 +10,7 @@
     <modules>
         <module>xrpc-demo</module>
     </modules>
-
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,6 +18,7 @@
         <maven.compiler.target>21</maven.compiler.target>
         <netty.version>4.1.101.Final</netty.version>
         <junit.version>4.13.2</junit.version>
+        <zookeeper.version>3.9.2</zookeeper.version>
     </properties>
 
 
@@ -27,6 +28,11 @@
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
                 <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${zookeeper.version}</version>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>

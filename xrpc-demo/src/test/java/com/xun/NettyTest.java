@@ -5,6 +5,11 @@ import io.netty.buffer.CompositeByteBuf;
 import io.netty.buffer.Unpooled;
 import org.junit.Test;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.zip.GZIPOutputStream;
+
 /**
  * ClassName: NettyTest
  * Package: com.xun
@@ -45,5 +50,16 @@ public class NettyTest {
         ByteBuf body = byteBuf.slice(1024, 2048);
         System.out.println(byteBuf.readableBytes());
 
+    }
+    @Test
+    public void testCompress() throws IOException {
+       byte []b = new byte[]{99,30,30,30,30,40,50,60,70};
+       //本质就是将buf作为输入，将压缩后的数据作为输出到另一个字节数组中
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        GZIPOutputStream gzipOutputStream = new GZIPOutputStream(outputStream);
+        gzipOutputStream.write(b);
+        gzipOutputStream.finish();
+        byte[] bytes = outputStream.toByteArray();
+        System.out.println(Arrays.toString(bytes));
     }
 }

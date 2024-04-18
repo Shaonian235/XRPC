@@ -3,6 +3,7 @@
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$/xrpc-demo" dumb="true">
       <sourceFolder url="file://$MODULE_DIR$/xrpc-demo/src/main/java/com" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xrpc-demo/src/test/java/com/xun" isTestSource="true" />
     </content>
   </component>
 </module>
