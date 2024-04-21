@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/xrpc-api.iml" filepath="$PROJECT_DIR$/xrpc-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/xrpc-demo.iml" filepath="$PROJECT_DIR$/xrpc-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xrpc-provider-demo.iml" filepath="$PROJECT_DIR$/xrpc-provider-demo.iml" />
     </modules>
   </component>
 </project>

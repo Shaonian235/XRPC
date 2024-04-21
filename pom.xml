@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>xrpc-demo</module>
+        <module>xrpc-framework</module>
+        <module>xrpc-manager</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -19,6 +21,12 @@
         <netty.version>4.1.101.Final</netty.version>
         <junit.version>4.13.2</junit.version>
         <zookeeper.version>3.9.2</zookeeper.version>
+        <logback.version>1.4.11</logback.version>
+        <fastjson2.version>2.0.49</fastjson2.version>
+        <commons.lang3.version>3.12.0</commons.lang3.version>
+        <logback.version>1.4.11</logback.version>
+        <lombok.version>1.18.22</lombok.version>
+        <hessian.version>4.0.60</hessian.version>
     </properties>
 
 
@@ -40,6 +48,27 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.caucho</groupId>
+                <artifactId>hessian</artifactId>
+                <version>${hessian.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

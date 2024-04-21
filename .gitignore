@@ -1,0 +1,17 @@
+.idea
+/out/
+/target/
+*.iml
+*.class
+*.log
+*.lock
+*.pid
+*.pid.lock
+*.pid.lock.tmp
+*.pid.lock.tmp.tmp
+*.pid.lock.tmp.tmp.tmp
+*.pid.lock.tmp.tmp.tmp.tmp
+*.pid.lock.tmp.tmp.tmp.tmp.tmp
+*.pid.lock.tmp.tmp.tmp.tmp.tmp.tmp
+*.pid.lock.tmp.tmp.tmp.tmp.tmp.tmp.tmp
+*.pid.lock.tmp.tmp.tmp.tmp.tmp.tmp.tmp.tmp

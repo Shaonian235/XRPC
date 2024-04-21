@@ -6,6 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="xrpc-api" />
+        <module name="xrpc-provider-demo" />
+        <module name="xrpc-core" />
+        <module name="xrpc-consumer-demo" />
+        <module name="xrpc-manager" />
+        <module name="xrpc-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="19" />
